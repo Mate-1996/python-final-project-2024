@@ -1,10 +1,10 @@
 # Meal-Planner
 ## Project Description
-[Provide a brief overview of your project, 2-3 sentences]
+The Recipe Manager and Meal Planner is a web app that lets users store and organize recipes, plan meals on a calendar, and generate shopping lists based on meal plans. With features like recipe scaling and nutritional information calculation via API, it simplifies meal prep and supports healthier choices. Built with Flask and SQLite, it’s a streamlined tool for daily meal management.
 ## Main Idea
-[Describe the core concept or functionality of your project]
+This project is a web app that helps users manage recipes, plan meals, and generate shopping lists based on planned meals, with added features like recipe scaling and nutritional insights.
 ## Technologies
-[List any technologies or libraries you think you might use]
+Flask, SQLLite , API about nutritional information
 ## Project Timeline
 - Week 4: Project initialization and setup
 - Week 5: First meaningful commit beyond initial setup
