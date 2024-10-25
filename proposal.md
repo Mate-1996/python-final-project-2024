@@ -1,4 +1,4 @@
-# [Your Project Title]
+# Meal-Planner
 ## Project Description
 [Provide a brief overview of your project, 2-3 sentences]
 ## Main Idea
