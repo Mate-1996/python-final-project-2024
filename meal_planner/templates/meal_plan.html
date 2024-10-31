@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Meal Plan</h2>
+<p>Assign recipes to each day of the week to plan your meals.</p>
+
+<form method="post">
+    <label for="day">Select Day:</label>
+    <select id="day" name="day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <!-- Add the rest of the days -->
+    </select><br>
+    
+    <label for="recipe">Select Recipe:</label>
+    <select id="recipe" name="recipe">
+        {% for recipe in recipes %}
+            <option value="{{ recipe.id }}">{{ recipe.title }}</option>
+        {% endfor %}
+    </select><br>
+    
+    <button type="submit">Add to Meal Plan</button>
+</form>
+
+<!-- List of planned meals -->
+<h3>Your Weekly Plan</h3>
+{% if meal_plan %}
+    <ul>
+        {% for plan in meal_plan %}
+            <li>{{ plan.day }}: {{ plan.recipe_title }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No meals planned yet!</p>
+{% endif %}
+{% endblock %}
