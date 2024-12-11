@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS recipes (
     description TEXT,
     ingredients TEXT NOT NULL,
     instructions TEXT NOT NULL,
+    encrypted_ssn TEXT NOT NULL,
     prep_time INTEGER,  -- in minutes
     cook_time INTEGER,  -- in minutes
     servings INTEGER,
